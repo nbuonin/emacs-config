@@ -28,3 +28,7 @@
   (defun track-mouse (e))
   (setq mouse-sel-mode t)
   )
+
+;; enable line numbers
+(global-linum-mode t)
+(setq linum-format "%2d ")
