@@ -11,6 +11,10 @@
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
 
+;; Adding support for auto-complete c/c++ headers
+(require 'auto-complete-c-headers)
+(add-to-list 'ac-sources 'ac-source-c-headers)
+ 
 ;; Enable mouse support
 (unless window-system
   (require 'mouse)
